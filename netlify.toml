@@ -1,4 +1,1 @@
-[[redirects]]
-from = "/api/*"
-to = "/api/fast.py"
-status = 200
+

@@ -150,7 +150,7 @@ def determine_fitness_plan(bmi):
     else:
         return "Obese", "Weight Loss", "Cardio Fitness"
 @app.post("/predict/")
-async def predict(data: FitnessData):
+def predict(data: FitnessData):
     # حساب BMI
     bmi = calculate_bmi(data.weight, data.height)
     level, fitness_goal, fitness_type = determine_fitness_plan(bmi)
